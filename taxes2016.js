@@ -3,8 +3,8 @@
  *
  * @param {number} wages The total wages earned
  * @param {number} nonwageincome The total non-wage income (like dividends)
- * @payrolldeductions {number} payrolldeductions Total payroll and HSA deductions
- * @deductions {number} deductions The total amount of deductions not including payrolldeductions
+ * @param {number} payrolldeductions Total payroll and HSA deductions
+ * @param {number} deductions The total amount of deductions not including payrolldeductions
  * @return Taxes owed
  * @customfunction
  */
