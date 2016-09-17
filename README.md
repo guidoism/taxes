@@ -13,3 +13,13 @@ sense for my specific situation.
 Despite that I've tried my best to make them accurate.
 
 If you sue me, then, well, you suck.
+
+# Included taxes
+
+* 2016 Federal income taxes (Form 1040 for married couples)
+* 2016 Social security tax
+* 2016 Medicare tax (including additional medicare tax)
+* 2016 California state income tax
+* 2016 California disability tax
+* 2016 Alternative Minimum tax
+* 2016 Kentucky state income tax
