@@ -59,54 +59,38 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 var data = [
-  { date: "24-Apr-08", close: 200.00 },
-  { date: "24-Apr-09", close: 100.00 },
+  { date: formatDate.parse("24-Apr-07"), close: 93.24 },
+  { date: formatDate.parse("25-Apr-07"), close: 95.35 },
+  { date: formatDate.parse("26-Apr-07"), close: 98.84 },
+  { date: formatDate.parse("27-Apr-07"), close: 99.92 },
+  { date: formatDate.parse("30-Apr-07"), close: 99.80 },
+  { date: formatDate.parse("1-May-07"), close: 99.47 },
+  { date: formatDate.parse("2-May-07"), close: 100.39 },
+  { date: formatDate.parse("3-May-07"), close: 100.40 },
+  { date: formatDate.parse("4-May-07"), close: 100.81 },
 ]
 
-/*
-d3.tsv("data.tsv", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.letter; }));
-  // code omitted.
-  .on('mouseout', tip.hide)
-});
-Becomes this code:
+x.domain(d3.extent(data, function(d) { return d.date; }));
+y.domain(d3.extent(data, function(d) { return d.close; }));
 
-x.domain(data.map(function(d) { return d.letter; }));
-// code omitted.
-.on('mouseout', tip.hide)
-*/
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+    .call(xAxis);
 
-d3.tsv("data.tsv", type, function(error, data) {
-  if (error) throw error;
+svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
+  .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 6)
+    .attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .text("Price ($)");
 
-  x.domain(d3.extent(data, function(d) { return d.date; }));
-  y.domain(d3.extent(data, function(d) { return d.close; }));
-
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
-
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Price ($)");
-
-  svg.append("path")
-      .datum(data)
-      .attr("class", "line")
-      .attr("d", line);
-});
-
-function type(d) {
-  d.date = formatDate.parse(d.date);
-  d.close = +d.close;
-  return d;
-}
+svg.append("path")
+    .datum(data)
+    .attr("class", "line")
+    .attr("d", line);
 
 </script>
