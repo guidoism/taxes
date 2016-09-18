@@ -29,4 +29,5 @@ If you sue me, then, well, you suck.
 * Add the rest of the states
 * Add 2017 tax changes
 * Add earned income tax credit and child tax credit
+* Add the rest of the crap like mining company income to AMT
 * Add pure javascript playground, maybe with D3
