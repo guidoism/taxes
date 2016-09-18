@@ -10,7 +10,7 @@ correct. In fact, not only that, but I can guarantee that it's
 wrong since I've simplified it in places where it doesn't make
 sense for my specific situation.
 
-Despite that I've tried my best to make them accurate.
+Despite that I've tried my best to make it accurate.
 
 If you sue me, then, well, you suck.
 
