@@ -23,3 +23,10 @@ If you sue me, then, well, you suck.
 * 2016 California disability tax
 * 2016 Alternative Minimum tax
 * 2016 Kentucky state income tax
+
+# TODO
+
+* Add the rest of the states
+* Add 2017 tax changes
+* Add earned income tax credit and child tax credit
+* Add pure javascript playground, maybe with D3
