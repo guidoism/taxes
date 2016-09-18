@@ -16,13 +16,13 @@ If you sue me, then, well, you suck.
 
 # Included taxes
 
-* 2016 Federal income taxes (Form 1040 for married couples)
-* 2016 Social security tax
-* 2016 Medicare tax (including additional medicare tax)
-* 2016 California state income tax
-* 2016 California disability tax
-* 2016 Alternative Minimum tax
-* 2016 Kentucky state income tax
+* 2016 Federal Income Tax (Form 1040 for married couples)
+* 2016 Social Security Tax
+* 2016 Medicare Tax (including Additional Medicare Tax)
+* 2016 California State income Tax
+* 2016 California Sisability Tax
+* 2016 Alternative Minimum Tax
+* 2016 Kentucky State Income Tax
 
 # TODO
 
