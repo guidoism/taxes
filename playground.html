@@ -26,6 +26,7 @@ body {
 </style>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="2016.js"></script>
 <script>
 
 var margin = {top: 20, right: 20, bottom: 30, left: 50},
@@ -50,7 +51,7 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.close); });
+    .y(function(d) { return y(d.income); });
 
 var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -427,14 +428,18 @@ var data = [
   { date: formatDate.parse("12/29/2016"), },
   { date: formatDate.parse("12/30/2016"), },
   { date: formatDate.parse("12/31/2016"), },
-]
+];
 
+var income = 500000;
 for (var i = 0, len = data.length; i < len; i++) {
-  data[i].close = Math.sin(i);
+  var current_income = (income / len) * i;
+  data[i].taxes = TAXES(current_income, 0, 0, 0);
+  data[i].income = current_income - data[i].taxes;
+
 }
 				       
 x.domain(d3.extent(data, function(d) { return d.date; }));
-y.domain(d3.extent(data, function(d) { return d.close; }));
+y.domain(d3.extent(data, function(d) { return d.income; }));
 
 svg.append("g")
     .attr("class", "x axis")
