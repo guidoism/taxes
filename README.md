@@ -20,7 +20,7 @@ If you sue me, then, well, you suck.
 * 2016 Social Security Tax
 * 2016 Medicare Tax (including Additional Medicare Tax)
 * 2016 California State income Tax
-* 2016 California Sisability Tax
+* 2016 California Disability Tax
 * 2016 Alternative Minimum Tax
 * 2016 Kentucky State Income Tax
 
