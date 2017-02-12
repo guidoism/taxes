@@ -6,6 +6,10 @@ import re
 import json
 import requests
 
+def sort_date(k):
+    k = k[0].split('-')
+    return (k[2], k[0], k[1])
+    
 def update_gold():
     r = requests.get('http://onlygold.com/Info/Search-Gold-Prices.asp')
 
@@ -55,10 +59,9 @@ def update_silver():
 
     prices = dict(json.load(open('silver.json')))
     prices.update(dict(zip(t[::4], t[1::4])))
-    out = sorted(prices.items(), reverse=True)
+    out = sorted(prices.items(), key=sort_date, reverse=True)
     json.dump(out, open('silver.json', 'w'), indent=2)
     open('silver.csv', 'w').write('\n'.join((','.join(line) for line in out)))
-
     
 update_gold()
 update_silver()
