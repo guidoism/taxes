@@ -16,18 +16,18 @@ If you sue me, then, well, you suck.
 
 # Included taxes
 
-* 2016 Federal Income Tax (Form 1040 for married couples)
-* 2016 Social Security Tax
-* 2016 Medicare Tax (including Additional Medicare Tax)
-* 2016 California State income Tax
-* 2016 California Disability Tax
-* 2016 Alternative Minimum Tax
-* 2016 Kentucky State Income Tax
+* 2017 Federal Income Tax (Form 1040 for married couples and singles)
+* 2017 Social Security Tax
+* 2017 Medicare Tax (including Additional Medicare Tax)
+* 2017 California State income Tax
+* 2017 California Disability Tax
+* 2017 Alternative Minimum Tax
+* 2017 Kentucky State Income Tax
+* 2017 District of Columbia Income Tax
 
 # TODO
 
 * Add the rest of the states
-* Add 2017 tax changes
 * Add earned income tax credit and child tax credit
 * Add the rest of the crap like mining company income to AMT
 * Add pure javascript playground, maybe with D3
